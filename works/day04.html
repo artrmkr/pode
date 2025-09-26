@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+</head>
+<body>
+    <!-- 덧셈 계산기 -->
+    <div>
+        <input id="inp-num1" /> + <input id="inp-num2" /> = <input id="inp-result" />
+    </div>
+    <div>
+        <button id="btn-submit">덧셈 실행</button>
+    </div>
+    <br>
+
+    <!-- 뺄셈 계산기 -->
+    <div>
+        <input id="inp-sub1" /> - <input id="inp-sub2" /> = <input id="inp-subresult" />
+    </div>
+    <div>
+        <button id="btn-sub">뺄셈 실행</button>
+    </div>
+
+    <script>
+        // 덧셈
+        var inpNum1 = document.getElementById("inp-num1")
+        var inpNum2 = document.getElementById("inp-num2")
+        var inpResult = document.getElementById("inp-result")
+        var btnSubmit = document.getElementById("btn-submit")
+
+        btnSubmit.addEventListener('click', () => {
+            var num1 = parseInt(inpNum1.value);
+            var num2 = parseInt(inpNum2.value);
+            var result = num1 + num2;
+            inpResult.value = result;
+        })
+
+        // 뺄셈
+        var inpSub1 = document.getElementById("inp-sub1")
+        var inpSub2 = document.getElementById("inp-sub2")
+        var inpSubResult = document.getElementById("inp-subresult")
+        var btnSub = document.getElementById("btn-sub")
+
+        btnSub.addEventListener('click', () => {
+            var num1 = parseInt(inpSub1.value);
+            var num2 = parseInt(inpSub2.value);
+            var result = num1 - num2;
+            inpSubResult.value = result;
+        })
+    </script>
+</body>
+</html>
