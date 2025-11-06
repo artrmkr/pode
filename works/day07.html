@@ -8,11 +8,12 @@
         body {
             color : white;
             background-color: blue;
+            font-size: 10px;
         }
     </style>
 </head>
 <body>
-    
+
     <h1 id="count-text">count : 0</h1>
     <button id="btn-inc">inc(+)</button>
     <button id="btn-reset">reset(0)</button>
@@ -22,7 +23,7 @@
         var btnInc = document.getElementById("btn-inc")
         var btnReset = document.getElementById("btn-reset")
         var count = 0;
-        
+            
         btnInc.addEventListener("click",()=>{
             count=count+1
             console.log(count)
