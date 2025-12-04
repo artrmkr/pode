@@ -1,23 +1,27 @@
-@font-face {
-    font-family: 'RoundedFixedsys';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff');
-    font-weight: normal;
-    font-display: swap;
-}
-
 body {
     display: flex;
     flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0px;
-    padding: 0px;
     background-color: blue;
     color: white;
     font-family: 'RoundedFixedsys';
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.box-1 {
-    font-size: 64px;
+header {
+    display: flex;
+    background-color: yellow;
+    color: black;
+    padding: 16px;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    padding: 16px;
 }
