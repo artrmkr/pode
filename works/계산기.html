@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>계산기</title>
+
 </head>
 <body>
-    <!-- 덧셈 계산기 -->
+    
     <div>
         <input id="inp-num1" /> + <input id="inp-num2" /> = <input id="inp-result" />
     </div>
@@ -15,7 +16,6 @@
     </div>
     <br>
 
-    <!-- 뺄셈 계산기 -->
     <div>
         <input id="inp-sub1" /> - <input id="inp-sub2" /> = <input id="inp-subresult" />
     </div>
@@ -24,7 +24,6 @@
     </div>
 
     <script>
-        // 덧셈 
         var inpNum1 = document.getElementById("inp-num1")
         var inpNum2 = document.getElementById("inp-num2")
         var inpResult = document.getElementById("inp-result")
@@ -37,7 +36,6 @@
             inpResult.value = result;
         })
 
-        // 뺄셈
         var inpSub1 = document.getElementById("inp-sub1")
         var inpSub2 = document.getElementById("inp-sub2")
         var inpSubResult = document.getElementById("inp-subresult")
